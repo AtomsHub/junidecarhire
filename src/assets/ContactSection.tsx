@@ -7,7 +7,7 @@ type ContactProps = {
 }
 
 const ContactSection = ({ selectedCar }: ContactProps) => {
-  const [status, setStatus] = useState("idle"); // idle | loading | success | error
+  const [status, setStatus] = useState("idle");
   const today = new Date().toISOString().split('T')[0]
   useEffect(() => {
     if(status === 'success' || status === 'error'){
@@ -26,7 +26,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     const formData = new FormData(formElement);
 
     try {
-      const response = await fetch("https://formspree.io/f/xblnznea", {
+      const response = await fetch("https://formspree.io/f/xpwvkrgz", {
         method: "POST",
         body: formData,
         headers: {
@@ -61,7 +61,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     {
         icon: Mail,
         value: 'Email Address',
-        label: 'alaseyoshinake@yahoo.com'
+        label: 'junideenterprises22@gmail.com'
     }
 ];
 
