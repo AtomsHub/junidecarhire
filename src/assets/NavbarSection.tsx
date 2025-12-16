@@ -9,11 +9,14 @@ const NavbarSection = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      setIsOpen(false);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [])
+
+  const textColor = isScrolled ? 'text-brand-text' : 'text-white';
 
   const navlink = [
     { name: "Home", href: "#home" },
@@ -23,7 +26,7 @@ const NavbarSection = () => {
   ];
 
   return (
-    <nav className={`fixed w-full top-0 z-50 transition-all duration=300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 text-brand-text backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
       <div className="container max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* Logo */}
@@ -37,7 +40,7 @@ const NavbarSection = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-brand-text hover:text-brand-primary transition-colors"
+              className={`${textColor} hover:text-brand-primary transition-colors`}
             >
               {link.name}
             </a>
@@ -47,7 +50,7 @@ const NavbarSection = () => {
 
         {/* Hamburger Button */}
         <button
-          className="md:hidden flex items-center"
+          className={`md:hidden ${textColor} flex items-center`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={26} /> : <Menu size={26} />}
