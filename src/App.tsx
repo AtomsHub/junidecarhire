@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import type { Car } from "./data/CarData"
 import AboutSection from './assets/AboutSection'
 import HeroSection from './assets/HeroSection'
@@ -7,28 +7,32 @@ import FleetSection from './assets/FleetSection'
 import ContactSection from './assets/ContactSection'
 import Testimonials from './assets/Testimonials'
 import Footer from './assets/Footer'
+import BookingModal from './assets/BookingModal'
 
 const App = () => {
-  const [selectedCar, setSelectedCar] = useState<Car | null>(null);
-  const contactRef = useRef<HTMLDivElement | null >(null);
-
-  const scrollToContact = () => {
-    contactRef.current?.scrollIntoView({ behavior: "smooth" })
-  }
+  const [selectedCar, setSelectedCar] = useState<Car | null>(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   return(
     
     <div className='min-h-screen'>
       <NavbarSection />
+      <BookingModal 
+        isOpen={isModalOpen}
+        onClose={() => {
+          setIsModalOpen(false)
+          setSelectedCar(null);
+        }}
+        selectedCar={selectedCar}
+      />
       <HeroSection />
       <AboutSection />
       <FleetSection onBookNow={(car) => {
           setSelectedCar(car)
-          scrollToContact()
-        }}/>
-    <div ref={contactRef}>
-      <ContactSection selectedCar={selectedCar} />
-    </div>
+          setIsModalOpen(true)
+        }}
+        />
+      <ContactSection />
       <Testimonials />
       <Footer />
     </div>

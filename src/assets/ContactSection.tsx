@@ -1,51 +1,8 @@
-import type { Car } from "../data/CarData"
 import { MapPin, Phone, Mail } from "lucide-react"
-import { useEffect, useState } from "react"
+import { useForm } from "../hook/useForm";
 
-type ContactProps = {
-  selectedCar: Car | null
-}
-
-const ContactSection = ({ selectedCar }: ContactProps) => {
-  const [status, setStatus] = useState("idle");
-  const today = new Date().toISOString().split('T')[0]
-  useEffect(() => {
-    if(status === 'success' || status === 'error'){
-      const timer = setTimeout(() => {
-        setStatus("idle");
-      }, 5000)
-      return () => clearTimeout(timer);
-    }
-  },[status])
-
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("loading");
-
-    const formElement = e.currentTarget;
-    const formData = new FormData(formElement);
-
-    try {
-      const response = await fetch("https://formspree.io/f/xpwvkrgz", {
-        method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
-      });
-
-      if (response.ok) {
-        setStatus("success");
-        formElement.reset();
-        console.log("Formspree submission succeeded!");
-      } else {
-        setStatus("error");
-      }
-    } catch (error) {
-      setStatus("error");
-    }
-  };
-
+const ContactSection = () => {
+  const {status, submit} = useForm();
   const stats = [
     {
         icon: MapPin,
@@ -93,9 +50,10 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           </div>
 
           {/* Right Side */}
-          <form onSubmit={handleSubmit} className="max-w-md p-6 bg-white rounded-xl shadow-lg">
+          <form onSubmit={submit} className="max-w-md p-6 bg-white rounded-xl shadow-lg">
             <div className="space-y-5">
                 <input type="hidden" name="submittedAt" value={new Date().toISOString()}/>
+                <input type="hidden" name="formType" value="contact" />
 
                 {/* Full Name */}
                 <div>
@@ -136,52 +94,13 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     />
                 </div>
 
-                {/* Car Selected */}
-                <div>
-                    <label htmlFor="carSelected" className="block text-sm">Car Selected</label>
-                    <input
-                        id="carSelected" 
-                        type="text"
-                        name="carSelected"
-                        value={selectedCar ? selectedCar.name : ""}
-                        readOnly
-                        className="w-full px-3 py-2 rounded bg-gray-50 text-gray-700 cursor-default" 
-                        placeholder="Select a car from Our Fleet"
-                    />
-                </div>
-
-                {/* Pickup Date */}
-                <div>
-                    <label htmlFor="pickupDate" className="block text-sm">Pickup Date*</label>
-                    <input 
-                        id="pickupDate" 
-                        name="pickupDate" 
-                        type="date" 
-                        required 
-                        min={today} 
-                        className="w-full mt-1 p-2 border rounded-md" 
-                    />
-                </div>
-
-                {/* Pickup Time */}
-                <div>
-                    <label htmlFor="pickupTime" className="block text-sm">Pickup Time*</label>
-                    <input 
-                        id="pickupTime" 
-                        name="pickupTime" 
-                        type="time" 
-                        required 
-                        className="w-full mt-1 p-2 border rounded-md" 
-                    />
-                </div>
-
                 {/* Message  */}
                 <div>
                     <label htmlFor="message" className="block text-sm">Message</label>
                     <textarea
                         id="message"
                         name="message"
-                        placeholder="Tell us about your rental needs"
+                        placeholder="Tell us how we can help you"
                         className="w-full mt-1 p-2 border rounded-md"
                     ></textarea>
                 </div>

@@ -3,7 +3,7 @@ import { testimonials } from "../data/Testimonial";
 
 const Testimonials = () => {
     return (
-        <section id='testimonials' className="container max-w-auto px-4 py-20 md:py-25 bg-brand-primary-soft">
+        <section id='testimonials' className="max-w-auto px-4 py-20 md:py-25 bg-brand-primary-soft">
             <div>
                 <div className="text-center space-y-2 mb-10">
                     <p className="text-brand-accent text-sm font-semibold">Testimonials</p>

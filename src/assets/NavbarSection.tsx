@@ -22,7 +22,7 @@ const NavbarSection = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Cars", href: "#fleet" },
-    { name: "Testimonials", href: "#testimonial" },
+    { name: "Testimonials", href: "#testimonials" },
   ];
 
   return (
@@ -31,7 +31,7 @@ const NavbarSection = () => {
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src={Logo} className="w-14 h-14 object-cover" />
+          <img src={Logo} className="w-20 h-20 object-cover" />
         </div>
 
         {/* Desktop Nav */}
