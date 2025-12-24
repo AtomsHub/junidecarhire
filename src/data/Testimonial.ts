@@ -17,7 +17,7 @@ export const testimonials: Testimonials[] = [
   {
     name: "UNICEF Field Office",
     message:
-      "Junide Cutting Edge Enterprise consistently provides well-maintained vehicles with prompt response times. Their professionalism and reliability make them a trusted partner for our field operations.",
+      "Junide Car Hire consistently provides well-maintained vehicles with prompt response times. Their professionalism and reliability make them a trusted partner for our field operations.",
       icon: Globe
   },
   {
@@ -29,13 +29,13 @@ export const testimonials: Testimonials[] = [
   {
     name: "Save the Children International",
     message:
-      "Junide Cutting Edge Enterprise delivers quality vehicles on time and responds swiftly to our transportation needs. Their service has greatly supported our project activities.",
+      "Junide Car hire delivers quality vehicles on time and responds swiftly to our transportation needs. Their service has greatly supported our project activities.",
       icon: HeartHandshake
   },
   {
     name: "Malaria Consortium",
     message:
-      "We rely on Junide Cutting Edge Enterprise for timely and reliable vehicle hire. Their quick turnaround and well-serviced cars have been invaluable to our operations.",
+      "We rely on Junide Car Hire for timely and reliable vehicle hire. Their quick turnaround and well-serviced cars have been invaluable to our operations.",
       icon: Bug
   },
 
