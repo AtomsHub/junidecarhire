@@ -8,6 +8,8 @@ import ContactSection from './assets/ContactSection'
 import Testimonials from './assets/Testimonials'
 import Footer from './assets/Footer'
 import BookingModal from './assets/BookingModal'
+import CEOCard from './assets/CEOCard'
+import RouteCoverage from './assets/RouteCoverage'
 
 const App = () => {
   const [selectedCar, setSelectedCar] = useState<Car | null>(null)
@@ -27,6 +29,7 @@ const App = () => {
       />
       <HeroSection />
       <AboutSection />
+      <RouteCoverage />
       <FleetSection onBookNow={(car) => {
           setSelectedCar(car)
           setIsModalOpen(true)
@@ -34,6 +37,7 @@ const App = () => {
         />
       <ContactSection />
       <Testimonials />
+      <CEOCard />
       <Footer />
     </div>
   )

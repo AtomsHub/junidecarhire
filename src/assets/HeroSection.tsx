@@ -9,13 +9,28 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-brand-primary/40"></div>
                 {/* HomePage Content */}
 
-                <div className='relative z-10 flex flex-col items-start justify-center px-20  pt-32 pb-20'>
-                    <div className='max-w-3xl'>
-                        <h1 className="text-white/80 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Your Journey, {" "}
-                            <span className='text-brand-accent'>Our Wheels</span>
+                 <div className='relative z-10 flex flex-col items-start justify-center px-6 md:px-20  pt-32 pb-20'>
+                    <div className='max-w-4xl'>
+                        {/* Parent Company Label */}
+                        <div className="flex items-center gap-2 mb-4">
+                            <div className="w-8 h-[2px] bg-brand-accent"></div>
+                            <h2 className="text-sm text-white/90 font-bold tracking-[0.2em] uppercase text-xs md:text-sm">
+                                Junide Cutting Edge Enterprises Limited
+                            </h2>
+                        </div>
+
+                        {/* Main Service Title */}
+                        <h1 className="text-white/80 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.9]">
+                            JUNIDE <br />
+                            <span className='text-brand-accent'>CAR HIRE</span>
                         </h1>
-                        <p className='text-white/80 text-lg md:text-xl max-w-xl  pb-8'>Experience reliable and premium car hire services across Kebbi State. From economy to luxury, we provide vehicles that match every trip, purpose, and budget.</p>
-                        <div className='flex flex-col sm:flex-row items-center gap-4'>
+
+                        <p className='text-white/80 text-lg md:text-xl max-w-xl  pb-8 leading-relaxed font-medium'>
+                            Premium mobility solutions for <span className="text-brand-accent">NGOs, Corporate Bodies, and Individuals.</span> Reliability delivered across Northern Nigeria.
+                        </p>
+
+                        <div className='flex flex-col sm:flex-row items-center gap-5'>
+                             <div className='flex flex-col sm:flex-row items-center gap-4'>
                             <button className='text-sm sm:w-auto bg-brand-accent text-white font-semibold px-6 py-2 rounded-lg hover:scale-105 transition-transform duration-200'><a href="#fleet" className='flex items-center gap-2'>
                                 Browse Our Fleet
                                 <ArrowRight className='w-5 h-5'/>
@@ -23,8 +38,9 @@ const HeroSection = () => {
                             </button>
                             <button className='text-sm sm:w-auto bg-transparent font-semibold text-brand-accent border border-brand-accent hover:border-none hover:text-white/80 hover:bg-brand-accent px-6 py-2 rounded-lg'><a href="#contact">Contact Us</a></button>
                         </div>
+                        </div>
                     </div>
-                    <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 mt-10'>
+                    <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 mt-10 shrink-0'>
                         <div className='flex items-center gap-3'>
                             <div className='w-10 h-10 rounded-xl text-white/80 bg-brand-accent/80 transparent flex items-center justify-center'>
                                 <Shield className='w-6 h-6'/>

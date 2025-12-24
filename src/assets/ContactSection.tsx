@@ -28,7 +28,7 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Side */}
           <div className="space-y-8 text-left">
-            <p className='text-brand-accent text-sm font-semibold'>Contact Us</p>
+            <p className='text-brand-accent text-sm font-bold uppercase tracking-widest'>Contact Us</p>
             <h1 className='text-4xl font-bold'>Get In Touch With Us</h1>
             <p className="text-lg text-brand-text-muted">Have questions about our services or need help with a reservation?<br/>
             We're here to help! Reach out to us using the form or contact details below.</p>
