@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CEOIMG from '../image/CEO.png';
+import CEOIMG from '../image/CEO.jpg';
 
 const CEOCard = () => {
   const [isOpen, setIsOpen] = useState(false);
