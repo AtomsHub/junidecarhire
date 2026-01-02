@@ -10,6 +10,7 @@ import Footer from './assets/Footer'
 import BookingModal from './assets/BookingModal'
 import CEOCard from './assets/CEOCard'
 import RouteCoverage from './assets/RouteCoverage'
+import FloatingActions from './assets/FloatingActions'
 
 const App = () => {
   const [selectedCar, setSelectedCar] = useState<Car | null>(null)
@@ -39,6 +40,7 @@ const App = () => {
       <Testimonials />
       <CEOCard />
       <Footer />
+      <FloatingActions />
     </div>
   )
 }
