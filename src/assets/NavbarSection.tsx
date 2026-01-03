@@ -38,7 +38,7 @@ const NavbarSection = () => {
           <img 
             src={Logo} 
             className={`transition-all duration-500 object-contain ${
-              isScrolled ? 'w-12 h-12 md:w-14 md:h-14' : 'w-14 h-14 md:w-20 md:h-20'
+              isScrolled ? 'w-15 h-15 md:w-16 md:h-16' : 'w-16 h-16 md:w-22 md:h-22'
             }`} 
             alt="JCEEL Logo" 
           />
