@@ -3,8 +3,8 @@ import { Users, Car, Award, CheckCircle } from 'lucide-react';
 
 const AboutSection = () => {
     const stats = [
-        {icon: Users, value: '10,000+', label: 'Happy Customers'},
-        {icon: Car, value: '150+', label: 'Vehicles'},
+        {icon: Users, value: '1,000+', label: 'Happy Customers'},
+        {icon: Car, value: '50+', label: 'Vehicles'},
         {icon: Award, value: '10+', label: 'Years of Trust'},
     ]
 
