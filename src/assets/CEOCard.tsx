@@ -27,12 +27,12 @@ const CEOCard = () => {
               Olayinka Alase-Olaniru
             </h2>
             <p className="text-lg text-brand-accent font-semibold mb-6">
-              CEO / Managing Director, JCEE
+              CEO / Managing Director, JCEEL
             </p>
             
             <p className="text-brand-text-muted leading-relaxed mb-8">
               Mrs. Olayinka Alase-Olaniru is an accomplished executive who has redefined 
-              mobility solutions across North-Western Nigeria. Since co-founding JCEE in 2013, 
+              mobility solutions across North-Western Nigeria. Since co-founding JCEEL in 2013, 
               she has led the company to become a trusted partner for NGOs, government agencies, 
               and corporate clients.
             </p>
@@ -91,7 +91,7 @@ const CEOCard = () => {
 
                 <h4 className="text-xl font-bold text-brand-text mb-4">Our Vision</h4>
                 <p className="text-brand-text-muted italic border-l-4 border-brand-accent pl-6 py-4 bg-brand-accent-soft rounded-r-xl">
-                  "Under Mrs. Olayinka Alase‑Olaniru’s leadership, JCEE is committed to redefining mobility through reliable, affordable, and technology-driven car rental solutions."
+                  "Under Mrs. Olayinka Alase‑Olaniru’s leadership, JCEEL is committed to redefining mobility through reliable, affordable, and technology-driven car rental solutions."
                 </p>
               </div>
             </div>

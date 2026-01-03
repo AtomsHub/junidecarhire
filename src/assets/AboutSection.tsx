@@ -63,11 +63,11 @@ const AboutSection = () => {
                             
                             <div className='text-brand-text-muted space-y-4 leading-relaxed'>
                                 <p>
-                                    <strong className="text-brand-text">Junide Car Hire</strong>, a subsidiary of Junide Cutting Edge Enterprises Limited, is a premier indigenous transportation organization. Since 2013, we have specialized in providing professional car hire and leasing solutions for <span className="text-brand-text font-medium text-brand-primary underline decoration-brand-accent/30">NGOs, Government agencies, and Corporate organizations.</span>
+                                    <strong className="text-brand-text">Junide Cutting Edge Enterprises Limited</strong>, is a premier indigenous transportation organization. Since 2013, we have specialized in providing professional car hire and leasing solutions for <span className="text-brand-text font-medium text-brand-primary">NGOs, Government agencies, and Corporate organizations.</span>
                                 </p>
 
-                                <p>
-                                    While our roots are in <strong className="text-brand-text">Birnin Kebbi</strong>, our reach is regional. We facilitate seamless travel across the <strong className="text-brand-text">Kebbi–Sokoto corridor</strong> and provide interstate logistics to <strong className="text-brand-text font-medium text-brand-primary">Abuja, Kaduna, Kano</strong>, and the North Eastern states.
+                                <p className='text-brand-text-muted space-y-4 leading-relaxed'>
+                                    While our roots are in <strong className="text-brand-text">Birnin Kebbi</strong>, our reach is expansive, covering the full breadth of Northern Nigeria. We facilitate seamless travel across the <strong className="text-brand-text">Kebbi–Sokoto corridor</strong> and maintain a robust operational presence across the <strong className="text-brand-text">North West</strong> (Kebbi, Sokoto, Kano, Kaduna, Jigawa), the <strong className="text-brand-text">North East</strong> (Bauchi, Gombe, Adamawa), and the <strong className="text-brand-text">North Central</strong> (Plateau State) geopolitical zones.
                                 </p>
                                 
                                 <p>
