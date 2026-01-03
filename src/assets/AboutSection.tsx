@@ -67,7 +67,7 @@ const AboutSection = () => {
                                 </p>
 
                                 <p className='text-brand-text-muted space-y-4 leading-relaxed'>
-                                    While our roots are in <strong className="text-brand-text">Birnin Kebbi</strong>, our reach is expansive, covering the full breadth of Northern Nigeria. We facilitate seamless travel across the <strong className="text-brand-text">Kebbi–Sokoto corridor</strong> and maintain a robust operational presence across the <strong className="text-brand-text">North West</strong> (Kebbi, Sokoto, Kano, Kaduna, Jigawa), the <strong className="text-brand-text">North East</strong> (Bauchi, Gombe, Adamawa), and the <strong className="text-brand-text">North Central</strong> (Plateau State) geopolitical zones.
+                                    While our roots are in <strong className="text-brand-text">Benin Kebbi</strong>, our reach is expansive, covering the full breadth of Northern Nigeria. We facilitate seamless travel across the <strong className="text-brand-text">Kebbi–Sokoto corridor</strong> and maintain a robust operational presence across the <strong className="text-brand-text">North West</strong> (Kebbi, Sokoto, Kano, Kaduna, Jigawa), the <strong className="text-brand-text">North East</strong> (Bauchi, Gombe, Adamawa), and the <strong className="text-brand-text">North Central</strong> (Plateau State) geopolitical zones.
                                 </p>
                                 
                                 <p>
