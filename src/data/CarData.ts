@@ -18,7 +18,7 @@ import Highlander2007 from '../image/Cars/Toyota Highlander 2007.jpg'
 import Sienna2005 from '../image/Cars/Toyota Sienna 2005.jpg'
 import Sienna2006 from '../image/Cars/Toyota Sienna 2006 SUV.jpg'
 import Sienna from '../image/Cars/Toyota Sienna.jpeg'
-import Hilux from '../image/Cars/Toyota Hilux.jpeg'
+import Hilux2012 from '../image/Cars/Toyota Hilux.jpeg'
 export const cars: Car[] = [
   { id: 1, name: "Toyota Camry 2005", image: Camry2005, category: "Car" },
   { id: 2, name: "Toyota Corolla 2008", image: Corrola2008, category: "Car" },
